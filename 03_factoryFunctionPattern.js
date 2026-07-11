@@ -1,4 +1,4 @@
-const user = function (name, age) {
+function createUser(name, age) {
   return {
     greet() {
       console.log(`hello this is ${name}`);
@@ -7,4 +7,6 @@ const user = function (name, age) {
       console.log(`Age is ${age}`);
     },
   };
-};
+}
+
+user1 = createUser("Ankit", 22);
