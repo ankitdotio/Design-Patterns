@@ -1,7 +1,10 @@
-//iffe
+//REVEALING MODULE PATTERN
+//reveals the function with name
 
 const Bank = (() => {
+  //private
   let balance;
+  //public
   function setBalance(val) {
     balance = val;
   }
@@ -18,9 +21,8 @@ const Bank = (() => {
   }
 
   return {
-    balance,
-    setBalance,
-    getBalance,
-    withdraw,
+    set: setBalance,
+    check: getBalance,
+    withdraw: withdraw,
   };
 })();
