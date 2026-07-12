@@ -16,5 +16,5 @@ input.addEventListener(
   "input",
   throttle(function () {
     console.log("throttling...");
-  }, delay),
+  }, 2000),
 );

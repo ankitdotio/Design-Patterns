@@ -14,5 +14,5 @@ input.addEventListener(
   "input",
   debounce(function () {
     console.log("debounce...");
-  }, delay),
+  }, 2000),
 );
