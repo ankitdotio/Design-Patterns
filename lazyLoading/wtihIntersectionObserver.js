@@ -1,4 +1,4 @@
-const img = document.querySelectorAll("img");
+const imgs = document.querySelectorAll("img");
 
 const observer = new IntersectionObserver(
   function (entries, observer) {
@@ -16,3 +16,5 @@ const observer = new IntersectionObserver(
     threshold: 0.1,
   },
 );
+
+imgs.forEach((img) => observer.observe(img));
